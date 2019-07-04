@@ -32,12 +32,45 @@ namespace Repository
             busca = $"%{busca}%";
             comando.Parameters.AddWithValue("@BUSCA", busca);
 
-            List<Escola> escola = new List<Escola>();
+            List<Escola> escolas = new List<Escola>();
             DataTable tabela = new DataTable();
             tabela.Load(comando.ExecuteReader());
 
             comando.Connection.Close();
 
+            for (int i = 0; i < tabela.Rows.Count; i++)
+            {
+                DataRow linha = tabela.Rows[i];
+                Escola escola = new Escola();
+
+                escola.Nome = linha["Nome"].ToString();
+                escolas.Add(escola);
+
+            }
+            return escolas;
+
+        }
+
+        public Escola ObterPeloId(int id)
+        {
+            SqlCommand comando = conexão.Conectar();
+            comando.CommandText = @"SELECT * FROM escolas WHERE id = @ID";
+
+            comando.Parameters.AddWithValue("@ID", id);
+
+            DataTable tabela = new DataTable();
+            tabela.Load(comando.ExecuteReader());
+
+            if (tabela.Rows.Count == 1)
+            {
+                DataRow linha = tabela.Rows[0];
+                Escola escola = new Escola();
+                escola.Id = Convert.ToInt32(linha["id"];
+                escola.Nome = linha["Nome"].ToString();
+
+                return escola;
+            }
+            return null;
         }
     }
 }
