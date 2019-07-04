@@ -8,7 +8,7 @@ namespace Model
 {
     public class Escola
     {
-        public int id;
-        public string nome;
+        public int Id;
+        public string Nome;
     }
 }
