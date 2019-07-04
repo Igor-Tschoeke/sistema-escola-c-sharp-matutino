@@ -71,6 +71,15 @@ namespace Repository
                 return escola;
             }
             return null;
+
+        }
+
+        public bool Atualizar(Escola escola)
+        {
+            SqlCommand comando = conexão.Conectar();
+            comando.CommandText = @"UPDATE escolas SET nome = @NOME WHERE id = @ID";
+
+            comando.Parameters.AddWithValue("@NOME", escola.Nome);
         }
     }
 }
