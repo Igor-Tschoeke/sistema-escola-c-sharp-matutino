@@ -8,23 +8,39 @@
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Cadastro Escola</title>
-    <link rel="stylesheet"href="~/Content/EscolaIndex.css";
+    <title>Index</title>
 </head>
 <body>
-    <div> 
-        <a href="/escola/cadastro">Cadastro Escola</a>
-    </div>
     <div>
-        <table>
-            <thread>
-                <tr>
-                    <th>Nome da Escola</th>
-                </tr>
-            </thread>
-        </table>
+        <a href="/escola/cadastro">Cadastro Escolas</a>
     </div>
-
-    
+    <table>
+        <thead>
+            <tr>
+                <th>Código</th>
+                <th>Nome</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < ViewBag.Escola.Count; i++)
+            {
+                <tr>
+                    <td>@ViewBag.Escola[i].Id</td>
+                    <td>@ViewBag.Escola[i].Nome</td>
+                    <td>
+                        <a href="/escola/apagar?id=@ViewBag.Escola[i].Id" id="botao-apagar">Apagar</a>
+                        <a href="/escola/editar?id=@ViewBag.Escola[i].Id" id="botao-editar">Editar</a>
+                    </td>
+                </tr>
+                
+            }
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>-----</th>
+                <th>-----</th>
+            </tr>
+        </tfoot>
+        </table>
 </body>
 </html>

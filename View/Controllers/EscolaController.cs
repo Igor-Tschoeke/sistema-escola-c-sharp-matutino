@@ -18,15 +18,38 @@ namespace View.Controllers
 
             ViewBag.Escola = escolas;
 
+            return View("Index");
+        }
+
+        public ActionResult Cadastro()
+        {
             return View();
         }
+
         public ActionResult Store(string nome)
         {
             Escola escola = new Escola();
             escola.Nome = nome;
 
             int id = repositorio.Inserir(escola);
-            return RedirectToAction("Cadastro Escola");
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Apagar(int id)
+        {
+            repositorio.Apagar(id);
+            return RedirectToAction("Index");
+        }
+
+        public ActionResult Update(int id, string nome)
+        {
+            Escola escola = new Escola();
+            escola.Id = id;
+            escola.Nome = nome;
+
+            bool alterou = repositorio.Atualizar(escola);
+
+            return RedirectToAction("Index");
         }
     }
 }

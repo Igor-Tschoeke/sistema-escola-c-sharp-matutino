@@ -11,16 +11,17 @@
     <title>Cadastro</title>
 </head>
 <body>
-    <div> 
-        <a href="/estoque/" >Lista de Estoques</a>
+    <div>
+        <a href="/escola/">Lista de Escolas</a>
     </div>
-
     <form action="/escola/store" method="post">
-        <label for="campo-nome" name="Nome da Escola"></label>
-        <input type="text" name="nome" id="campo-nome" />
-        
-        <button type="submit">Salvar</button>
+        <div class="div-campo">
+            <label for="campo-nome">Nome</label>
+            <input type="text" name="nome"
+                   id="campo-nome" class="campo" />
+        </div>
 
-        </form
+        <button type="submit">Salvar</button>
+    </form>
 </body>
 </html>

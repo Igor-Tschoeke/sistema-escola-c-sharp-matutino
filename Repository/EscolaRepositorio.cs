@@ -16,7 +16,8 @@ namespace Repository
         public int Inserir(Escola escola)
         {
             SqlCommand comando = conexão.Conectar();
-            comando.CommandText = @"INSERT INTO(nome)VALUES(@NOME)";
+            comando.CommandText = @"INSERT INTO escolas(nome)VALUES(@NOME)";
+
             comando.Parameters.AddWithValue("@NOME", escola.Nome);
 
             int id = Convert.ToInt32(comando.ExecuteScalar());
@@ -43,6 +44,7 @@ namespace Repository
                 DataRow linha = tabela.Rows[i];
                 Escola escola = new Escola();
 
+                escola.Id = Convert.ToInt32(linha["Id"]);
                 escola.Nome = linha["Nome"].ToString();
                 escolas.Add(escola);
 
@@ -80,6 +82,7 @@ namespace Repository
             comando.CommandText = @"UPDATE escolas SET nome = @NOME WHERE id = @ID";
 
             comando.Parameters.AddWithValue("@NOME", escola.Nome);
+            comando.Parameters.AddWithValue("@ID", escola.Id);
 
             int quantidadeAfetada = comando.ExecuteNonQuery();
             comando.Connection.Close();
