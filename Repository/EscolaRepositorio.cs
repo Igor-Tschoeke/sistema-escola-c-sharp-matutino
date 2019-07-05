@@ -65,7 +65,7 @@ namespace Repository
             {
                 DataRow linha = tabela.Rows[0];
                 Escola escola = new Escola();
-                escola.Id = Convert.ToInt32(linha["id"];
+                escola.Id = Convert.ToInt32(linha["id"]);
                 escola.Nome = linha["Nome"].ToString();
 
                 return escola;
@@ -80,6 +80,23 @@ namespace Repository
             comando.CommandText = @"UPDATE escolas SET nome = @NOME WHERE id = @ID";
 
             comando.Parameters.AddWithValue("@NOME", escola.Nome);
+
+            int quantidadeAfetada = comando.ExecuteNonQuery();
+            comando.Connection.Close();
+            return quantidadeAfetada == 1;
+
+        }
+
+        public bool Apagar(int id)
+        {
+            SqlCommand comando = conexão.Conectar();
+            comando.CommandText = @"DELETE FROM escolas WHERE id = @ID";
+            comando.Parameters.AddWithValue("@ID", id);
+
+            int quantidadeAfetada = comando.ExecuteNonQuery();
+            comando.Connection.Close();
+
+           return quantidadeAfetada == 1;
         }
     }
 }
