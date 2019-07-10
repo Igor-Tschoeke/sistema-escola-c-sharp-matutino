@@ -31,3 +31,12 @@ th, td {
     background-color: cornflowerblue;
     border-bottom-width:5px;
 }
+
+#botao-apagar{
+    border: ridge;
+    color: black;
+    text-decoration: wavy;
+    float: left;
+    border-style: outset;
+    border-color: cornflowerblue;
+}
