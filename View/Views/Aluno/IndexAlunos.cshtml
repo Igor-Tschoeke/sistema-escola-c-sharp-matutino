@@ -9,6 +9,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>IndexAlunos</title>
+    <link rel="stylesheet" href="~/Content/"
 </head>
 <body>
     <div>
@@ -36,8 +37,8 @@
                     <td>@ViewBag.Aluno[i].Nota_2</td>
                     <td>@ViewBag.Aluno[i].Nota_3</td>
                     <td>
-                        <a href="/escola/apagar?id=@ViewBag.Aluno[i].Id" id="botao-apagar">Apagar</a>
-                        <a href="/escola/editar?id=@ViewBag.Aluno[i].Id" id="botao-editar">Editar</a>
+                        <a href="/aluno/apagar?id=@ViewBag.Aluno[i].Id" id="botao-apagar">Apagar</a>
+                        <a href="/aluno/editar?id=@ViewBag.Aluno[i].Id" id="botao-editar">Editar</a>
                     </td>
                 </tr>
 

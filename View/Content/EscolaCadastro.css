@@ -1,0 +1,39 @@
+﻿body {
+    background-color:azure;
+    font-family:Verdana;
+}
+
+
+a {
+    background-color: cornflowerblue;
+    padding: 4.5px;
+    border-radius: 5px;
+    text-decoration: wavy;
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 1.50%;
+}
+
+th {
+    background-color: cornflowerblue;
+}
+
+.campo{
+    margin-top:1%;
+    
+}
+
+#botao-salvar {
+    margin-top: 0.5%;
+    border-radius:4px;
+    background-color: forestgreen;
+    color: black;
+    padding: 8px;
+    margin-left:17%;
+    cursor: pointer;
+    border-style: hidden;
+    border-color: azure;
+    margin-right: 3%;
+    margin-top: 0.9%;
+}
+

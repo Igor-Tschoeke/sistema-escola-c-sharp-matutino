@@ -46,15 +46,15 @@ namespace View.Controllers
             return RedirectToAction("IndexAlunos");
         }
 
-        public ActionResult Update(int id, string nome, string cpf, decimal nota_1, decimal nota_2, decimal nota_3)
+        public ActionResult Update(int id, string nome, string cpf, decimal nota1, decimal nota2, decimal nota3)
         {
             Aluno aluno = new Aluno();
             aluno.Id = id;
             aluno.Nome = nome;
             aluno.Cpf = cpf;
-            aluno.Nota_1 = nota_1;
-            aluno.Nota_2 = nota_2;
-            aluno.Nota_3 = nota_3;
+            aluno.Nota_1 = nota1;
+            aluno.Nota_2 = nota2;
+            aluno.Nota_3 = nota3;
 
             bool alterou = repositorio.Atualizar(aluno);
 

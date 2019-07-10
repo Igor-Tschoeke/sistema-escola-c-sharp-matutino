@@ -1,18 +1,39 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+    background-color: azure;
+    font-family:Verdana;
+}
+table {
+    width: 38%;
+    border: ridge cornflowerblue;
+    margin: 5px;
+    font-family: Verdana;
+    margin: 1.5%;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+th {
+    background-color: cornflowerblue;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+tr{
+    
 }
 
+#botao-apagar,#botao-editar{
+    background-color: cornflowerblue;
+    padding: 2.5px;
+    border-radius: 8px;
+    text-decoration: wavy;
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 10%;
+}
+
+#botao-cadastro {
+    background-color: cornflowerblue;
+    padding: 2.5px;
+    border-radius: 5px;
+    text-decoration: wavy;
+    font-weight: normal;
+    cursor: pointer;
+    margin-left: 2%;
+}
