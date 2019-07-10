@@ -9,10 +9,12 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Cadastro</title>
+    <link rel="stylesheet" href="~/Content/AlunoCadastro.css" />
+
 </head>
 <body>
     <div>
-        <a href="/aluno/">Lista de Alunos</a>
+        <a href="/aluno/IndexAlunos" id="botao-lista">Lista de Alunos</a>
     </div>
     <form action="/aluno/store" method="post">
 
@@ -51,7 +53,7 @@
 
         </div>
 
-        <button type="submit">Salvar</button>
+        <button type="submit" id="botao-salvar">Salvar</button>
     </form>
 
 </body>

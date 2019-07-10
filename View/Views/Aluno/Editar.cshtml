@@ -9,6 +9,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Editar</title>
+    <link rel="stylesheet" href="~/Content/AlunoEditar.css" />
 </head>
 <body>
     <form action="/aluno/update" method="post">
@@ -24,23 +25,23 @@
 
         <div>
             <label for="campo-nota1">Nota 1</label>
-            <input type="text" name="nota1" id="campo-nota1" @ViewBag.Aluno.Nota_1 />
+            <input type="text" name="nota1" id="campo-nota1" @ViewBag.Aluno.Nota1 />
         </div>
 
         <div>
             <label for="campo-nota2">Nota 2</label>
-            <input type="text" name="nota2" id="campo-nota2" @ViewBag.Aluno.Nota_2 />
+            <input type="text" name="nota2" id="campo-nota2" @ViewBag.Aluno.Nota2 />
         </div>
 
         <div>
             <label for="campo-nota3">Nota 3</label>
-            <input type="text" name="nota3" id="campo-nota3" @ViewBag.Aluno.Nota_2 />
+            <input type="text" name="nota3" id="campo-nota3" @ViewBag.Aluno.Nota3 />
         </div>
 
 
-        </div>
+        
         <input type="hidden" name="id" value="@ViewBag.Aluno.Id" />
-        <button type="submit">Salvar</button>
+        <button type="submit" id="botao-salvar">Salvar</button>
     </form>
 </body>
 </html>

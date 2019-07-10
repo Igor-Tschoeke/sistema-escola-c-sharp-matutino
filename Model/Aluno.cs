@@ -11,8 +11,8 @@ namespace Model
         public int Id;
         public string Nome;
         public string Cpf;
-        public decimal Nota_1;
-        public decimal Nota_2;
-        public decimal Nota_3;
+        public decimal Nota1;
+        public decimal Nota2;
+        public decimal Nota3;
     }
 }

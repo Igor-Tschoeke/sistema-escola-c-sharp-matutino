@@ -32,9 +32,9 @@ namespace View.Controllers
             Aluno aluno = new Aluno();
             aluno.Nome = nome;
             aluno.Cpf = cpf;
-            aluno.Nota_1 = nota1;
-            aluno.Nota_2 = nota2;
-            aluno.Nota_3 = nota3;
+            aluno.Nota1 = nota1;
+            aluno.Nota2 = nota2;
+            aluno.Nota3 = nota3;
 
             int id = repositorio.Inserir(aluno);
             return RedirectToAction("IndexAlunos");
@@ -52,9 +52,9 @@ namespace View.Controllers
             aluno.Id = id;
             aluno.Nome = nome;
             aluno.Cpf = cpf;
-            aluno.Nota_1 = nota1;
-            aluno.Nota_2 = nota2;
-            aluno.Nota_3 = nota3;
+            aluno.Nota1 = nota1;
+            aluno.Nota2 = nota2;
+            aluno.Nota3 = nota3;
 
             bool alterou = repositorio.Atualizar(aluno);
 

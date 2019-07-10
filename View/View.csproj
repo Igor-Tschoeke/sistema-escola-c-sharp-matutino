@@ -85,6 +85,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\AlunoCadastro.css" />
+    <Content Include="Content\AlunoEditar.css" />
+    <Content Include="Content\AlunoIndex.css" />
     <Content Include="Content\EscolaCadastro.css" />
     <Content Include="Content\EscolaIndex.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />

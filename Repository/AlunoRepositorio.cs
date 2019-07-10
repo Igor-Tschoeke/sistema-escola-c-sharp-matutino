@@ -20,9 +20,9 @@ namespace Repository
 
             comando.Parameters.AddWithValue("@NOME", aluno.Nome);
             comando.Parameters.AddWithValue("@CPF", aluno.Cpf);
-            comando.Parameters.AddWithValue("@NOTA_1", aluno.Nota_1);
-            comando.Parameters.AddWithValue("@NOTA_2", aluno.Nota_2);
-            comando.Parameters.AddWithValue("@NOTA_3", aluno.Nota_3);
+            comando.Parameters.AddWithValue("@NOTA_1", aluno.Nota1);
+            comando.Parameters.AddWithValue("@NOTA_2", aluno.Nota2);
+            comando.Parameters.AddWithValue("@NOTA_3", aluno.Nota3);
 
             int id = Convert.ToInt32(comando.ExecuteScalar());
             comando.Connection.Close();
@@ -51,9 +51,9 @@ namespace Repository
                 aluno.Id = Convert.ToInt32(linha["Id"]);
                 aluno.Nome = linha["Nome"].ToString();
                 aluno.Cpf = linha["Cpf"].ToString();
-                aluno.Nota_1 = Convert.ToDecimal(linha["Nota_1"]);
-                aluno.Nota_2 = Convert.ToDecimal(linha["Nota_2"]);
-                aluno.Nota_3 = Convert.ToDecimal(linha["Nota_3"]);
+                aluno.Nota1 = Convert.ToDecimal(linha["Nota_1"]);
+                aluno.Nota2 = Convert.ToDecimal(linha["Nota_2"]);
+                aluno.Nota3 = Convert.ToDecimal(linha["Nota_3"]);
                 alunos.Add(aluno);
 
             }
@@ -78,9 +78,9 @@ namespace Repository
                 aluno.Id = Convert.ToInt32(linha["id"]);
                 aluno.Nome = linha["Nome"].ToString();
                 aluno.Cpf = linha["Cpf"].ToString();
-                aluno.Nota_1 = Convert.ToDecimal(linha["Nota_1"]);
-                aluno.Nota_2 = Convert.ToDecimal(linha["Nota_2"]);
-                aluno.Nota_3 = Convert.ToDecimal(linha["Nota_3"]);
+                aluno.Nota1 = Convert.ToDecimal(linha["Nota_1"]);
+                aluno.Nota2 = Convert.ToDecimal(linha["Nota_2"]);
+                aluno.Nota3 = Convert.ToDecimal(linha["Nota_3"]);
 
                 return aluno;
             }
@@ -95,9 +95,9 @@ namespace Repository
 
             comando.Parameters.AddWithValue("@NOME", aluno.Nome);
             comando.Parameters.AddWithValue("@CPF", aluno.Cpf);
-            comando.Parameters.AddWithValue("@NOTA_1", aluno.Nota_1);
-            comando.Parameters.AddWithValue("@NOTA_2", aluno.Nota_2);
-            comando.Parameters.AddWithValue("@NOTA_3", aluno.Nota_3);
+            comando.Parameters.AddWithValue("@NOTA_1", aluno.Nota1);
+            comando.Parameters.AddWithValue("@NOTA_2", aluno.Nota2);
+            comando.Parameters.AddWithValue("@NOTA_3", aluno.Nota3);
             comando.Parameters.AddWithValue("@ID", aluno.Id);
 
             int quantidadeAfetada = comando.ExecuteNonQuery();

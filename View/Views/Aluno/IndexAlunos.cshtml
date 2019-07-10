@@ -9,11 +9,11 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>IndexAlunos</title>
-    <link rel="stylesheet" href="~/Content/"
+    <link rel="stylesheet" href="~/Content/AlunoIndex.css" />
 </head>
 <body>
     <div>
-        <a href="/aluno/cadastro">Cadastro Alunos</a>
+        <a href="/aluno/cadastro" id="botao-cadastro">Cadastro Alunos</a>
     </div>
     <table>
         <thead>
@@ -24,6 +24,7 @@
                 <th>Nota 1</th>
                 <th>Nota 2</th>
                 <th>Nota 3</th>
+                <th>Ação</th>
             </tr>
         </thead>
         <tbody>
@@ -33,9 +34,9 @@
                     <td>@ViewBag.Aluno[i].Id</td>
                     <td>@ViewBag.Aluno[i].Nome</td>
                     <td>@ViewBag.Aluno[i].Cpf</td>
-                    <td>@ViewBag.Aluno[i].Nota_1</td>
-                    <td>@ViewBag.Aluno[i].Nota_2</td>
-                    <td>@ViewBag.Aluno[i].Nota_3</td>
+                    <td>@ViewBag.Aluno[i].Nota1</td>
+                    <td>@ViewBag.Aluno[i].Nota2</td>
+                    <td>@ViewBag.Aluno[i].Nota3</td>
                     <td>
                         <a href="/aluno/apagar?id=@ViewBag.Aluno[i].Id" id="botao-apagar">Apagar</a>
                         <a href="/aluno/editar?id=@ViewBag.Aluno[i].Id" id="botao-editar">Editar</a>
@@ -46,6 +47,7 @@
         </tbody>
         <tfoot>
             <tr>
+                <th>-----</th>
                 <th>-----</th>
                 <th>-----</th>
                 <th>-----</th>

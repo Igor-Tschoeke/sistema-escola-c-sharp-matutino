@@ -1,0 +1,33 @@
+﻿body {
+     background-color:azure;
+}
+
+table {
+    border: ridge cornflowerblue;
+    margin:1.5%;
+    text-align:center;
+    border-collapse: collapse;
+    font-family:Verdana;
+}
+
+th{
+    background-color: cornflowerblue;
+    width:1%;
+    text-align: center;
+ 
+}
+
+th, td {
+    border: 1px ridge black;
+}
+
+#botao-cadastro{
+    border:ridge;
+    text-decoration:wavy;
+    font-family:Verdana;
+    border-color:cornflowerblue;
+    border-width:unset;
+    color:black;
+    background-color: cornflowerblue;
+    border-bottom-width:5px;
+}
