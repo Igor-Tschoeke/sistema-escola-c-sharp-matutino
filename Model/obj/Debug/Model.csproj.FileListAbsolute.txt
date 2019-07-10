@@ -10,3 +10,9 @@ T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.cspro
 T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
 T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.dll
 T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.pdb
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\bin\Debug\Model.dll
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\bin\Debug\Model.pdb
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.csprojAssemblyReference.cache
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.csproj.CoreCompileInputs.cache
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.dll
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Model\obj\Debug\Model.pdb

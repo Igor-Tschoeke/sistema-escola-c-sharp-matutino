@@ -16,3 +16,12 @@ T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Reposi
 T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Model.dll
 T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Model.pdb
 T:\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Repository.dll
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Repository.pdb
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Model.dll
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\bin\Debug\Model.pdb
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\obj\Debug\Repository.csprojAssemblyReference.cache
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\obj\Debug\Repository.csproj.CoreCompileInputs.cache
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\obj\Debug\Repository.csproj.CopyComplete
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\obj\Debug\Repository.dll
+C:\Users\igorg\OneDrive\Documentos\GitHub\sistema-escola-c-sharp-matutino\Repository\obj\Debug\Repository.pdb

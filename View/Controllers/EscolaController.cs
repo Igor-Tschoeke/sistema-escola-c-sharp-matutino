@@ -51,5 +51,12 @@ namespace View.Controllers
 
             return RedirectToAction("Index");
         }
+
+        public ActionResult Editar(int id)
+        {
+            Escola escola = repositorio.ObterPeloId(id);
+            ViewBag.Escola = escola;
+            return View();
+        }
     }
 }

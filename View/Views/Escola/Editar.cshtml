@@ -11,13 +11,13 @@
     <title>Editar</title>
 </head>
 <body>
-
-    <form action="/escola/update" method="post">Editar</form>
-    <div> 
-        <label for="campo-nome">Nome</label>
-        <input type="text" name="nome" id="campo-nome" @ViewBag.Escola.Nome />
-    </div>
-    <input type="hidden" name="id" value="@ViewBag.Escola.Id" />
-    <button type="submit">Salvar</button>
+    <form action="/escola/update" method="post">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" name="nome" id="campo-nome" @ViewBag.Escola.Nome />
+        </div>
+        <input type="hidden" name="id" value="@ViewBag.Escola.Id" />
+        <button type="submit">Salvar</button>
+    </form>
 </body>
 </html>
