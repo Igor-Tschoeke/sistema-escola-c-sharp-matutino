@@ -1,0 +1,36 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Editar</title>
+</head>
+<body>
+    <form action="/aluno/update" method="post">
+        <div>
+            <label for="campo-nome">Nome</label>
+            <input type="text" name="nome" id="campo-nome" @ViewBag.Aluno.Nome />
+
+            <label for="campo-cpf">CPF</label>
+            <input type="text" name="cpf" id="campo-cpf" @ViewBag.Aluno.Cpf />
+
+            <label for="campo-nota1">Nota 1</label>
+            <input type="text" name="nota1" id="campo-nota1" @ViewBag.Aluno.Nota_1 />
+            
+            <label for="campo-nota2">Nota 2</label>
+            <input type="text" name="nota2" id="campo-nota2" @ViewBag.Aluno.Nota_2 />
+
+            <label for="campo-nota3">Nota 3</label>
+            <input type="text" name="nota3" id="campo-nota3" @ViewBag.Aluno.Nota_2 />
+
+        </div>
+        <input type="hidden" name="id" value="@ViewBag.Aluno.Id" />
+        <button type="submit">Salvar</button>
+    </form>
+</body>
+</html>

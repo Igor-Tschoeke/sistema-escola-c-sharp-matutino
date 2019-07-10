@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Repository
 {
-    class AlunoRepositorio
+    public class AlunoRepositorio
     {
         Conexão conexão = new Conexão();
 
