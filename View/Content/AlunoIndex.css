@@ -32,11 +32,24 @@ th, td {
     border-bottom-width:5px;
 }
 
-#botao-apagar{
+#botao-apagar {
     border: ridge;
     color: black;
     text-decoration: wavy;
     float: left;
     border-style: outset;
     border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    margin-left: 3.6%;
+}
+
+#botao-editar{
+    border: ridge;
+    color: black;
+    text-decoration: wavy;
+    float: left;
+    border-style: outset;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    margin-left:10%;
 }
